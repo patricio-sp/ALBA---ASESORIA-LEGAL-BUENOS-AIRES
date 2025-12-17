@@ -87,10 +87,10 @@
         -->
         <section id="inicio" class="relative pt-16 pb-24 md:pt-24 md:pb-32 hero-gradient border-b border-slate-900">
             <div class="container mx-auto max-w-6xl px-4">
-                <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+                <div class="grid grid-cols-1 items-stretch gap-12 md:grid-cols-2">
                     <!-- Contenido de Texto -->
-                    <div class="text-center md:text-left">
-                        <span class="mb-4 inline-block rounded-full bg-teal-900/30 border border-teal-800/50 px-4 py-1 text-sm font-semibold text-teal-300">
+                    <div class="text-center md:text-left flex flex-col justify-center">
+                        <span class="mb-4 inline-block rounded-full bg-teal-900/30 border border-teal-800/50 px-4 py-1 text-sm font-semibold text-teal-300 self-center md:self-start">
                             Marketing y Coaching de Bienestar
                         </span>
                         <h1 class="text-4xl font-bold tracking-tighter text-white md:text-5xl lg:text-6xl">
@@ -111,11 +111,11 @@
                     </div>
                     
                     <!-- Imagen -->
-                    <div class="hidden md:block">
+                    <div class="hidden md:block h-full min-h-[400px]">
                         <!-- Logo oficial de Destressa cargado desde PostImage -->
                         <img src="https://i.postimg.cc/FF82MF3H/destressa-logo.jpg" 
                              alt="Logo Destressa" 
-                             class="rounded-2xl shadow-2xl shadow-teal-900/20 ring-1 ring-slate-800 w-full h-auto object-contain max-h-[500px]"
+                             class="rounded-2xl shadow-2xl shadow-teal-900/20 ring-1 ring-slate-800 w-full h-full object-cover"
                              onerror="this.src='https://placehold.co/500x500/0f172a/2dd4bf?text=Error+Carga+Imagen&font=inter'">
                     </div>
                 </div>
@@ -179,10 +179,10 @@
             <div class="container mx-auto max-w-6xl px-4 relative z-10">
                 <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
                     <!-- Imagen -->
-                    <div>
-                        <img src="https://placehold.co/600x450/0f172a/2dd4bf?text=Destressa+Empresas&font=inter" 
+                    <div class="h-full">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                              alt="[Imagen de un equipo de trabajo colaborando en una sala de reuniones moderna y oscura]" 
-                             class="rounded-xl shadow-2xl ring-1 ring-slate-800"
+                             class="rounded-xl shadow-2xl ring-1 ring-slate-800 w-full h-full object-cover min-h-[300px]"
                              onerror="this.src='https://placehold.co/600x450/0f172a/2dd4bf?text=Equipos+Saludables&font=inter'">
                     </div>
 
@@ -476,7 +476,7 @@
         </button>
         
         <!-- AUDIO PLAYER -->
-        <!-- IMPORTANTE: Reemplaza './cancion.mp3' con el nombre exacto de tu archivo en GitHub -->
+        <!-- IMPORTANTE: Reemplaza './nombre_de_tu_cancion.mp3' con el nombre exacto de tu archivo en GitHub -->
         <audio id="audioPlayer" loop>
             <source src="./nombre_de_tu_cancion.mp3" type="audio/mpeg">
         </audio>
